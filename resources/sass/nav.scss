@@ -1,0 +1,60 @@
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: $primary-blue;
+    color: $white;
+    padding: 15px 30px;
+
+    .logo {
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+
+    .menu-toggle {
+        display: none;
+        font-size: 1.5rem;
+        background: none;
+        border: none;
+        color: $white;
+        cursor: pointer;
+    }
+
+    .nav-links {
+        list-style: none;
+        display: flex;
+        gap: 20px;
+
+        li a {
+            font-weight: 600;
+            color: $white;
+            transition: color 0.3s;
+
+            &:hover {
+                color: $light-blue;
+            }
+        }
+    }
+
+    // Mobile
+    @media (max-width: 768px) {
+        .menu-toggle {
+            display: block;
+        }
+
+        .nav-links {
+            display: none;
+            flex-direction: column;
+            background: $dark-blue;
+            position: absolute;
+            top: 60px;
+            right: 20px;
+            padding: 15px;
+            border-radius: 10px;
+
+            &.open {
+                display: flex;
+            }
+        }
+    }
+}

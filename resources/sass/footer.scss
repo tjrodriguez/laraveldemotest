@@ -1,0 +1,46 @@
+#footer {
+    background: $dark-blue;
+    color: $white;
+    text-align: center;
+    padding: 30px 20px;
+    margin-top: 60px;
+
+    .footer-content {
+        max-width: 900px;
+        margin: 0 auto;
+
+        h3 {
+            margin-bottom: 5px;
+            font-size: 1.5rem;
+        }
+
+        p {
+            margin-bottom: 20px;
+            font-size: 1rem;
+        }
+
+        .footer-links {
+            list-style: none;
+            padding: 0;
+            margin: 0 0 20px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+
+            li a {
+                color: $light-blue;
+                font-weight: 600;
+                transition: 0.3s;
+
+                &:hover {
+                    color: $white;
+                }
+            }
+        }
+
+        .copyright {
+            font-size: 0.85rem;
+            color: $light-blue;
+        }
+    }
+}

@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>React SPA</title>
+
     <link rel="stylesheet" href="{{ mix('css/app.css') }}">
 </head>
 <body>
@@ -11,3 +12,4 @@
     <script src="{{ mix('js/app.js') }}"></script>
 </body>
 </html>
+{{-- This is a Blade comment and will not be rendered in the final HTML output. --}}

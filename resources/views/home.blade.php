@@ -9,3 +9,4 @@
     <div>Home Page</div>
 </body>
 </html>
+{{-- home.blade.php --}}
