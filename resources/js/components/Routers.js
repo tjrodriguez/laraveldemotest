@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-d
 import Services from "./Services";
 import Home from "./Home";
 import AboutUs from "./AboutUs";
+import ContactUs from "./ContactUs";
 import Nav from "./Nav";
 import Footer from "./Footer";
 
@@ -17,6 +18,7 @@ export default function Routers() {
                     <Route path="/services" element={<Services />} />
                     <Route path="/home" element={<Home />} />
                     <Route path="/about" element={<AboutUs />} />
+                    <Route path="/contact" element={<ContactUs />} />
                     <Route path="*" element={<Navigate to="/home" replace />} />
                 </Routes>
             </main>

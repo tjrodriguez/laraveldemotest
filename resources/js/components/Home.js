@@ -7,7 +7,7 @@ export default function Home() {
             {/* Hero Section */}
             <section className="hero">
                 <div className="hero-content">
-                    <h1>⚓ WOW!Boat Mekanik</h1>
+                    <h1>⚓ WOW!Boat Mechanic</h1>
                     <h2>Your Trusted Boat Technician</h2>
                     <p>
                         From engine repair to complete vessel maintenance, I provide 

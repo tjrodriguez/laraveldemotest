@@ -6,7 +6,7 @@ export default function Nav() {
 
     return (
         <nav id="navbar">
-            <h2 className="logo">⚓WOW! Boat Mechanic 4 hire⚓</h2>
+            <h2 className="logo">⚓ WOW! Boat Mechanic 4 hire ⚓</h2>
             <button 
                 className="menu-toggle" 
                 onClick={() => setIsOpen(!isOpen)}
@@ -17,7 +17,9 @@ export default function Nav() {
             <ul className={isOpen ? "nav-links open" : "nav-links"}>
                 <li><Link to="/home" onClick={() => setIsOpen(false)}>Home</Link></li>
                 <li><Link to="/services" onClick={() => setIsOpen(false)}>Services</Link></li>
-                <li><Link to="/about" onClick={() => setIsOpen(false)}>About</Link></li>
+                <li><Link to="/contact" onClick={() => setIsOpen(false)}>Contact Us</Link></li>
+                <li><Link to="/about" onClick={() => setIsOpen(false)}>About Us</Link></li>
+                
             </ul>
         </nav>
     );
