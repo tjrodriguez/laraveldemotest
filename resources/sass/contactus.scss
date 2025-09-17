@@ -1,38 +1,48 @@
+@import 'variables';
+
 #contact-page {
     min-height: 100vh;
-    background: linear-gradient(90deg, #e0f2ff 60%, #ffb366 100%);
+    background: linear-gradient(90deg, $off-white 60%);
     padding: 40px 0;
 
     .contact-hero {
-        background: linear-gradient(to right, #1976d2, #0d47a1);
-        color: #fff;
+        background: $gradient-primary;
+        color: $white;
         padding: 50px 20px;
         border-radius: 12px;
         margin: 0 auto 40px;
         max-width: 900px;
+        box-shadow: $box-shadow-md;
+        text-align: center; // Center hero text
 
         h1 {
             font-size: 2.5rem;
             margin-bottom: 10px;
+            color: $accent-gold;
+            text-shadow: 1px 1px 4px rgba($dark-blue, 0.5); // Improve contrast
         }
         p {
             max-width: 700px;
             margin: 0 auto;
             font-size: 1.2rem;
+            color: $white; // Ensure visible on dark bg
+            text-shadow: 1px 1px 4px rgba($dark-blue, 0.5);
         }
     }
 
     .contact-content {
         max-width: 900px;
         margin: 0 auto 40px;
-        background: #fff;
+        background: $white;
         border-radius: 12px;
-        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
+        box-shadow: $box-shadow-sm;
         padding: 30px;
+        text-align: left; // Ensure left alignment
 
         h2 {
-            color: #1976d2;
+            color: $primary-blue;
             margin-bottom: 20px;
+            text-align: left;
         }
 
         .contact-form {
@@ -54,50 +64,73 @@
                 display: flex;
                 flex-direction: column;
 
-                label {
-                    color: #0d47a1;
-                    font-weight: 600;
-                    margin-bottom: 8px;
-                }
-
                 input,
                 textarea {
-                    padding: 12px;
-                    border: 1px solid #bdbdbd;
-                    border-radius: 8px;
+                    background: $off-white;
+                    border: 2px solid rgba($primary-blue, 0.2); // Slightly darker border
+                    color: $primary-blue; // Darker text for visibility
+                    padding: 1rem;
+                    border-radius: 12px;
+                    transition: all 0.3s;
+                    font-family: $font-family-sans-serif;
                     font-size: 1rem;
-                    font-family: inherit;
-                    color: #0d47a1;
 
                     &:focus {
+                        border-color: $accent-gold;
+                        box-shadow: 0 0 0 4px rgba($accent-gold, 0.1);
                         outline: none;
-                        border-color: #1976d2;
-                        box-shadow: 0 0 5px rgba(25, 118, 210, 0.3);
                     }
                 }
 
-                textarea {
-                    resize: vertical;
+                label {
+                    color: $primary-blue;
+                    font-weight: 600;
+                    margin-bottom: 0.5rem;
+                    text-align: left;
                 }
             }
 
             .form-actions {
                 text-align: right;
+                margin-top: 1rem;
+            }
+
+            .btn-main {
+                display: inline-block;
+                padding: 12px 24px;
+                background: $primary-blue;
+                color: $white;
+                border-radius: 8px;
+                font-weight: bold;
+                transition: 0.3s;
+                border: none;
+                cursor: pointer;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+
+                &:hover {
+                    background: $dark-blue;
+                    color: $accent-gold;
+                }
             }
 
             .cta-btn {
-                display: inline-block;
-                padding: 12px 24px;
-                background: #1976d2;
-                color: #fff;
+                @extend .btn-main;
+                background: $gradient-primary;
+                color: $white;
+                border-radius: 50px;
+                font-weight: 600;
+                text-transform: uppercase;
+                letter-spacing: 1px;
                 border: none;
-                border-radius: 8px;
-                font-weight: bold;
+                transition: all 0.3s ease;
                 cursor: pointer;
-                transition: 0.3s;
 
                 &:hover {
-                    background: #0d47a1;
+                    transform: translateY(-2px);
+                    box-shadow: $box-shadow-md;
+                    background: $accent-gold;
+                    color: $primary-blue;
                 }
             }
         }
@@ -106,45 +139,48 @@
     .contact-table {
         max-width: 900px;
         margin: 0 auto 40px;
-        background: #fff;
+        background: $white;
         border-radius: 12px;
-        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
+        box-shadow: $box-shadow-sm;
         padding: 30px;
+        text-align: left;
 
         h2 {
-            color: #1976d2;
+            color: $primary-blue;
             margin-bottom: 20px;
-        }
-
-        .table-responsive {
-            overflow-x: auto;
+            text-align: left;
         }
 
         table {
             width: 100%;
-            border-collapse: collapse;
-            background: #fff;
+            border-collapse: separate;
+            border-spacing: 0;
+            background: $white;
 
             th,
             td {
-                padding: 10px;
+                padding: 12px 15px;
                 text-align: left;
+                color: $primary-blue; // Ensure table text is visible
             }
 
             th {
-                background: #e3f2fd;
-                color: #0d47a1;
+                background: rgba($primary-blue, 0.1);
+                color: $primary-blue;
                 font-weight: 600;
+                border-bottom: 2px solid rgba($primary-blue, 0.2);
             }
 
             tr {
-                border-bottom: 1px solid #eee;
+                transition: background-color 0.3s;
+
+                &:hover {
+                    background-color: rgba($light-blue, 0.2);
+                }
             }
 
-            .no-messages {
-                text-align: center;
-                color: #888;
-                padding: 20px;
+            td {
+                border-bottom: 1px solid rgba($gray, 0.1);
             }
 
             .message-cell {
@@ -157,40 +193,48 @@
                 border: none;
                 cursor: pointer;
                 font-size: 1.2rem;
-                margin-right: 8px;
+                color: $primary-blue;
+                transition: color 0.3s;
+                padding: 5px;
+                border-radius: 4px;
 
-                &:last-child {
-                    margin-right: 0;
+                &:hover {
+                    color: $accent-gold;
+                    background: rgba($accent-gold, 0.1);
                 }
             }
         }
     }
 
-    .contact-cta {
-        margin: 0 auto 40px;
-        max-width: 900px;
-        background: #e3f2fd;
-        padding: 40px 20px;
-        border-radius: 12px;
+    .contact-dropdown {
+        display: flex;
+        justify-content: center;
+        margin: 30px 0 20px 0;
 
-        h2 {
-            margin-bottom: 15px;
-            color: #0d47a1;
-        }
+        select {
+            font-size: 1.1rem;
+            padding: 10px 20px;
+            border-radius: 12px;
+            border: 2px solid rgba($primary-blue, 0.2);
+            color: $primary-blue;
+            background: $white;
+            font-weight: 600;
+            outline: none;
+            transition: all 0.3s;
+            cursor: pointer;
+            appearance: none;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' fill='%231a5f7a' viewBox='0 0 16 16'%3E%3Cpath d='M7.247 11.14L2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z'/%3E%3C/svg%3E");
+            background-repeat: no-repeat;
+            background-position: calc(100% - 12px) center;
+            padding-right: 35px;
 
-        .cta-btn {
-            display: inline-block;
-            padding: 12px 24px;
-            background: #1976d2;
-            color: #fff;
-            border-radius: 8px;
-            font-weight: bold;
-            transition: 0.3s;
-            text-decoration: none;
-            margin-top: 10px;
+            &:focus {
+                border-color: $accent-gold;
+                box-shadow: 0 0 0 4px rgba($accent-gold, 0.1);
+            }
 
             &:hover {
-                background: #0d47a1;
+                border-color: $accent-gold;
             }
         }
     }

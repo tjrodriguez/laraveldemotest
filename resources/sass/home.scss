@@ -1,40 +1,69 @@
 #homepage {
-    .hero {
-        background: url('/images/boat-bg.jpg') no-repeat center center/cover;
+    // Add this button style for consistency with about.scss
+    .btn-main {
+        display: inline-block;
+        padding: 12px 24px;
+        background: $primary-blue;
         color: $white;
-        text-align: center;
-        padding: 120px 20px;
+        border-radius: 8px;
+        font-weight: bold;
+        transition: 0.3s;
+        border: none;
+        cursor: pointer;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+
+        &:hover {
+            background: $dark-blue;
+            color: $accent-gold;
+        }
+    }
+
+    .hero {
+        background: 
+            linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+            url('/images/boat-bg.jpg') center center no-repeat; // Add your image path here
+        background-size: 200px auto, cover; // Adjust size as needed
+        min-height: 80vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
 
         .hero-content {
-            background: rgba(0, 47, 108, 0.7); // navy overlay
-            display: inline-block;
-            padding: 40px;
-            border-radius: 15px;
+            background: rgba($dark-blue, 0.85);
+            backdrop-filter: blur(8px);
+            border: 1px solid rgba($white, 0.1);
+            padding: 3rem;
+            border-radius: 20px;
             max-width: 800px;
-        }
+            animation: fadeIn 1s ease-out;
 
-        h1 {
-            font-size: 3rem;
-            margin-bottom: 10px;
-        }
+            h1 {
+                font-size: 3.5rem;
+                margin-bottom: 1rem;
+                color: $accent-gold;
+                font-weight: 700;
+            }
 
-        h2 {
-            font-size: 1.6rem;
-            margin-bottom: 20px;
-        }
+            h2 {
+                font-size: 1.8rem;
+                margin-bottom: 1.5rem;
+                color: $light-blue;
+            }
 
-        .cta-btn {
-            display: inline-block;
-            padding: 12px 24px;
-            background: $light-blue;
-            color: $dark-blue;
-            border-radius: 8px;
-            font-weight: bold;
-            transition: 0.3s;
+            p {
+                color: $white; // Make hero paragraph text white
+            }
 
-            &:hover {
-                background: $white;
-                color: $primary-blue;
+            .cta-btn {
+                @extend .btn-main; // Use the new button style
+                background: $accent-gold;
+                color: $dark-blue;
+
+                &:hover {
+                    background: $dark-blue;
+                    color: $accent-gold;
+                }
             }
         }
     }
@@ -54,6 +83,10 @@
             max-width: 700px;
             margin: 0 auto 20px;
         }
+
+        .cta-btn, .link-btn {
+            @extend .btn-main;
+        }
     }
 
     .services-grid {
@@ -63,20 +96,27 @@
         margin: 40px 0;
 
         .service-card {
-            background: $white;
-            padding: 20px;
-            border-radius: 12px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.15);
-            transition: transform 0.2s, background 0.3s;
-
+            background: $off-white;
+            border: 1px solid rgba($primary-blue, 0.1);
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: $box-shadow-sm;
+            
+            h3 {
+                color: $primary-blue;
+                font-size: 1.4rem;
+                margin-bottom: 1rem;
+                
+                span {
+                    color: $accent-gold;
+                    margin-right: 0.5rem;
+                }
+            }
+            
             &:hover {
                 transform: translateY(-5px);
-                background: $light-blue;
-            }
-
-            h3 {
-                margin-bottom: 10px;
-                color: $dark-blue;
+                box-shadow: $box-shadow-md;
+                border-color: $accent-gold;
             }
         }
     }

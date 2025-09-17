@@ -2,6 +2,25 @@
     text-align: center;
     padding: 60px 20px;
 
+    .btn-main {
+        display: inline-block;
+        padding: 12px 24px;
+        background: $primary-blue;
+        color: $white;
+        border-radius: 8px;
+        font-weight: bold;
+        transition: 0.3s;
+        border: none;
+        cursor: pointer;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+
+        &:hover {
+            background: $dark-blue;
+            color: $accent-gold;
+        }
+    }
+
     .about-hero {
         background: linear-gradient(to right, $primary-blue, $dark-blue);
         color: $white;
@@ -47,17 +66,7 @@
         }
 
         .cta-btn {
-            display: inline-block;
-            padding: 12px 24px;
-            background: $primary-blue;
-            color: $white;
-            border-radius: 8px;
-            font-weight: bold;
-            transition: 0.3s;
-
-            &:hover {
-                background: $dark-blue;
-            }
+            @extend .btn-main;
         }
     }
 }

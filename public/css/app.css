@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Nunito:400,600,700&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap);
 @charset "UTF-8";
 /*!
  * Bootstrap  v5.3.8 (https://getbootstrap.com/)
@@ -72,7 +72,7 @@
   --bs-dark-border-subtle: #adb5bd;
   --bs-white-rgb: 255, 255, 255;
   --bs-black-rgb: 0, 0, 0;
-  --bs-font-sans-serif: "Nunito", sans-serif;
+  --bs-font-sans-serif: "Inter", "Montserrat", sans-serif;
   --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
   --bs-body-font-family: var(--bs-font-sans-serif);
@@ -81,8 +81,8 @@
   --bs-body-line-height: 1.6;
   --bs-body-color: #212529;
   --bs-body-color-rgb: 33, 37, 41;
-  --bs-body-bg: #f0f8ff;
-  --bs-body-bg-rgb: 240, 248, 255;
+  --bs-body-bg: #ffffff;
+  --bs-body-bg-rgb: 255, 255, 255;
   --bs-emphasis-color: #000;
   --bs-emphasis-color-rgb: 0, 0, 0;
   --bs-secondary-color: rgba(33, 37, 41, 0.75);
@@ -114,8 +114,8 @@
   --bs-border-radius-2xl: var(--bs-border-radius-xxl);
   --bs-border-radius-pill: 50rem;
   --bs-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
-  --bs-box-shadow-sm: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
-  --bs-box-shadow-lg: 0 1rem 3rem rgba(0, 0, 0, 0.175);
+  --bs-box-shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.06);
+  --bs-box-shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.1);
   --bs-box-shadow-inset: inset 0 1px 2px rgba(0, 0, 0, 0.075);
   --bs-focus-ring-width: 0.25rem;
   --bs-focus-ring-opacity: 0.25;
@@ -2476,10 +2476,10 @@ textarea.form-control-lg {
   outline: 0;
 }
 .form-range:focus::-webkit-slider-thumb {
-  box-shadow: 0 0 0 1px #f0f8ff, 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+  box-shadow: 0 0 0 1px #ffffff, 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
 }
 .form-range:focus::-moz-range-thumb {
-  box-shadow: 0 0 0 1px #f0f8ff, 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+  box-shadow: 0 0 0 1px #ffffff, 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
 }
 .form-range::-moz-focus-outer {
   border: 0;
@@ -11984,13 +11984,20 @@ textarea.form-control-lg {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #0077b6;
-  color: #ffffff;
-  padding: 15px 30px;
+  background: rgba(22, 43, 60, 0.95);
+  backdrop-filter: blur(10px);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  padding: 1rem 2rem;
 }
 #navbar .logo {
-  font-size: 1.5rem;
-  font-weight: bold;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #f5b971;
+}
+#navbar .logo span {
+  color: #e8f1f5;
 }
 #navbar .menu-toggle {
   display: none;
@@ -12006,12 +12013,83 @@ textarea.form-control-lg {
   gap: 20px;
 }
 #navbar .nav-links li a {
+  position: relative;
+  padding: 0.5rem 1rem;
   font-weight: 600;
   color: #ffffff;
   transition: color 0.3s;
 }
+#navbar .nav-links li a::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #f5b971;
+  transition: width 0.3s;
+}
 #navbar .nav-links li a:hover {
-  color: #90e0ef;
+  color: #e8f1f5;
+}
+#navbar .nav-links li a:hover::after {
+  width: 100%;
+}
+#navbar .nav-contact-dropdown {
+  margin-left: 10px;
+  border-radius: 6px;
+  padding: 2px 8px;
+  font-size: 1rem;
+  border: 1px solid #e8f1f5;
+  background: #e8f1f5;
+  color: #162b3c;
+  font-weight: 600;
+  outline: none;
+  transition: border 0.2s;
+}
+#navbar .nav-contact-dropdown:focus {
+  border: 2px solid #1e3d59;
+}
+#navbar .nav-contact-parent {
+  position: relative;
+}
+#navbar .nav-contact-parent .nav-link {
+  cursor: pointer;
+  font-weight: 600;
+  color: #ffffff;
+  transition: color 0.3s;
+  padding: 0 8px;
+}
+#navbar .nav-contact-parent .nav-link:hover {
+  color: #e8f1f5;
+}
+#navbar .nav-contact-parent .nav-dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: rgba(22, 43, 60, 0.95);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  z-index: 10;
+  flex-direction: column;
+  padding: 8px 0;
+}
+#navbar .nav-contact-parent .nav-dropdown a {
+  color: #e8f1f5;
+  padding: 10px 18px;
+  display: block;
+  text-align: left;
+  font-weight: 600;
+  transition: background 0.2s, color 0.2s;
+}
+#navbar .nav-contact-parent .nav-dropdown a:hover {
+  background: rgba(245, 185, 113, 0.1);
+  color: #f5b971;
+}
+#navbar .nav-contact-parent:hover .nav-dropdown, #navbar .nav-contact-parent:focus-within .nav-dropdown {
+  display: flex;
 }
 @media (max-width: 768px) {
   #navbar .menu-toggle {
@@ -12020,7 +12098,7 @@ textarea.form-control-lg {
   #navbar .nav-links {
     display: none;
     flex-direction: column;
-    background: #023e8a;
+    background: #162b3c;
     position: absolute;
     top: 60px;
     right: 20px;
@@ -12032,39 +12110,69 @@ textarea.form-control-lg {
   }
 }
 
-#homepage .hero {
-  background: url("/images/boat-bg.jpg") no-repeat center center/cover;
-  color: #ffffff;
-  text-align: center;
-  padding: 120px 20px;
-}
-#homepage .hero .hero-content {
-  background: rgba(0, 47, 108, 0.7);
-  display: inline-block;
-  padding: 40px;
-  border-radius: 15px;
-  max-width: 800px;
-}
-#homepage .hero h1, #homepage .hero .h1 {
-  font-size: 3rem;
-  margin-bottom: 10px;
-}
-#homepage .hero h2, #homepage .hero .h2 {
-  font-size: 1.6rem;
-  margin-bottom: 20px;
-}
-#homepage .hero .cta-btn {
+#homepage .btn-main, #homepage #contact-page .contact-content .contact-form .cta-btn, #contact-page .contact-content .contact-form #homepage .cta-btn, #homepage #about-page .about-cta .cta-btn, #about-page .about-cta #homepage .cta-btn, #homepage #services-page .services-cta .cta-btn, #services-page .services-cta #homepage .cta-btn, #homepage .intro .cta-btn, #homepage .intro .link-btn,
+#homepage .services-preview .cta-btn,
+#homepage .services-preview .link-btn,
+#homepage .cta .cta-btn,
+#homepage .cta .link-btn, #homepage .hero .hero-content .cta-btn {
   display: inline-block;
   padding: 12px 24px;
-  background: #90e0ef;
-  color: #023e8a;
+  background: #1e3d59;
+  color: #ffffff;
   border-radius: 8px;
   font-weight: bold;
   transition: 0.3s;
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
-#homepage .hero .cta-btn:hover {
-  background: #ffffff;
-  color: #0077b6;
+#homepage .btn-main:hover, #homepage #contact-page .contact-content .contact-form .cta-btn:hover, #contact-page .contact-content .contact-form #homepage .cta-btn:hover, #homepage #about-page .about-cta .cta-btn:hover, #about-page .about-cta #homepage .cta-btn:hover, #homepage #services-page .services-cta .cta-btn:hover, #services-page .services-cta #homepage .cta-btn:hover, #homepage .intro .cta-btn:hover, #homepage .intro .link-btn:hover,
+#homepage .services-preview .cta-btn:hover,
+#homepage .services-preview .link-btn:hover,
+#homepage .cta .cta-btn:hover,
+#homepage .cta .link-btn:hover, #homepage .hero .hero-content .cta-btn:hover {
+  background: #162b3c;
+  color: #f5b971;
+}
+#homepage .hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/images/boat-bg.jpg") center center no-repeat;
+  background-size: 200px auto, cover;
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#homepage .hero .hero-content {
+  background: rgba(22, 43, 60, 0.85);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 3rem;
+  border-radius: 20px;
+  max-width: 800px;
+  animation: fadeIn 1s ease-out;
+}
+#homepage .hero .hero-content h1, #homepage .hero .hero-content .h1 {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+  color: #f5b971;
+  font-weight: 700;
+}
+#homepage .hero .hero-content h2, #homepage .hero .hero-content .h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  color: #e8f1f5;
+}
+#homepage .hero .hero-content p {
+  color: #ffffff;
+}
+#homepage .hero .hero-content .cta-btn {
+  background: #f5b971;
+  color: #162b3c;
+}
+#homepage .hero .hero-content .cta-btn:hover {
+  background: #162b3c;
+  color: #f5b971;
 }
 #homepage .intro,
 #homepage .services-preview,
@@ -12078,7 +12186,7 @@ textarea.form-control-lg {
 #homepage .cta h2,
 #homepage .cta .h2 {
   margin-bottom: 20px;
-  color: #0077b6;
+  color: #1e3d59;
 }
 #homepage .intro p,
 #homepage .services-preview p,
@@ -12093,19 +12201,25 @@ textarea.form-control-lg {
   margin: 40px 0;
 }
 #homepage .services-grid .service-card {
-  background: #ffffff;
-  padding: 20px;
-  border-radius: 12px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
-  transition: transform 0.2s, background 0.3s;
+  background: #f9fbfc;
+  border: 1px solid rgba(30, 61, 89, 0.1);
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.06);
+}
+#homepage .services-grid .service-card h3, #homepage .services-grid .service-card .h3 {
+  color: #1e3d59;
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+#homepage .services-grid .service-card h3 span, #homepage .services-grid .service-card .h3 span {
+  color: #f5b971;
+  margin-right: 0.5rem;
 }
 #homepage .services-grid .service-card:hover {
   transform: translateY(-5px);
-  background: #90e0ef;
-}
-#homepage .services-grid .service-card h3, #homepage .services-grid .service-card .h3 {
-  margin-bottom: 10px;
-  color: #023e8a;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-color: #f5b971;
 }
 
 #services-page {
@@ -12113,7 +12227,7 @@ textarea.form-control-lg {
   padding: 60px 20px;
 }
 #services-page .services-hero {
-  background: linear-gradient(to right, #0077b6, #023e8a);
+  background: linear-gradient(to right, #1e3d59, #162b3c);
   color: #ffffff;
   padding: 80px 20px;
   border-radius: 12px;
@@ -12131,32 +12245,87 @@ textarea.form-control-lg {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
 }
 #services-page .services-grid .service-card h2, #services-page .services-grid .service-card .h2 {
-  color: #0077b6;
+  color: #1e3d59;
   margin-bottom: 15px;
+}
+#services-page .btn-main, #services-page #contact-page .contact-content .contact-form .cta-btn, #contact-page .contact-content .contact-form #services-page .cta-btn, #services-page #about-page .about-cta .cta-btn, #about-page .about-cta #services-page .cta-btn, #services-page .services-cta .cta-btn, #services-page #homepage .hero .hero-content .cta-btn, #homepage .hero .hero-content #services-page .cta-btn, #services-page #homepage .intro .cta-btn, #homepage .intro #services-page .cta-btn, #services-page #homepage .intro .link-btn, #homepage .intro #services-page .link-btn,
+#services-page #homepage .services-preview .cta-btn,
+#homepage .services-preview #services-page .cta-btn,
+#services-page #homepage .services-preview .link-btn,
+#homepage .services-preview #services-page .link-btn,
+#services-page #homepage .cta .cta-btn,
+#homepage .cta #services-page .cta-btn,
+#services-page #homepage .cta .link-btn,
+#homepage .cta #services-page .link-btn {
+  display: inline-block;
+  padding: 12px 24px;
+  background: #1e3d59;
+  color: #ffffff;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: 0.3s;
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+#services-page .btn-main:hover, #services-page #contact-page .contact-content .contact-form .cta-btn:hover, #contact-page .contact-content .contact-form #services-page .cta-btn:hover, #services-page #about-page .about-cta .cta-btn:hover, #about-page .about-cta #services-page .cta-btn:hover, #services-page .services-cta .cta-btn:hover, #services-page #homepage .hero .hero-content .cta-btn:hover, #homepage .hero .hero-content #services-page .cta-btn:hover, #services-page #homepage .intro .cta-btn:hover, #homepage .intro #services-page .cta-btn:hover, #services-page #homepage .intro .link-btn:hover, #homepage .intro #services-page .link-btn:hover,
+#services-page #homepage .services-preview .cta-btn:hover,
+#homepage .services-preview #services-page .cta-btn:hover,
+#services-page #homepage .services-preview .link-btn:hover,
+#homepage .services-preview #services-page .link-btn:hover,
+#services-page #homepage .cta .cta-btn:hover,
+#homepage .cta #services-page .cta-btn:hover,
+#services-page #homepage .cta .link-btn:hover,
+#homepage .cta #services-page .link-btn:hover {
+  background: #162b3c;
+  color: #f5b971;
 }
 #services-page .services-cta {
   margin-top: 50px;
   padding: 40px;
-  background: #90e0ef;
+  background: #e8f1f5;
   border-radius: 12px;
 }
-#services-page .services-cta .cta-btn {
-  padding: 12px 24px;
-  background: #0077b6;
-  color: #ffffff;
-  border-radius: 8px;
-  transition: 0.3s;
-}
-#services-page .services-cta .cta-btn:hover {
-  background: #023e8a;
-}
-
 #about-page {
   text-align: center;
   padding: 60px 20px;
 }
+#about-page .btn-main, #about-page #contact-page .contact-content .contact-form .cta-btn, #contact-page .contact-content .contact-form #about-page .cta-btn, #about-page .about-cta .cta-btn, #about-page #homepage .hero .hero-content .cta-btn, #homepage .hero .hero-content #about-page .cta-btn, #about-page #homepage .intro .cta-btn, #homepage .intro #about-page .cta-btn, #about-page #homepage .intro .link-btn, #homepage .intro #about-page .link-btn,
+#about-page #homepage .services-preview .cta-btn,
+#homepage .services-preview #about-page .cta-btn,
+#about-page #homepage .services-preview .link-btn,
+#homepage .services-preview #about-page .link-btn,
+#about-page #homepage .cta .cta-btn,
+#homepage .cta #about-page .cta-btn,
+#about-page #homepage .cta .link-btn,
+#homepage .cta #about-page .link-btn, #about-page #services-page .services-cta .cta-btn, #services-page .services-cta #about-page .cta-btn {
+  display: inline-block;
+  padding: 12px 24px;
+  background: #1e3d59;
+  color: #ffffff;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: 0.3s;
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+#about-page .btn-main:hover, #about-page #contact-page .contact-content .contact-form .cta-btn:hover, #contact-page .contact-content .contact-form #about-page .cta-btn:hover, #about-page .about-cta .cta-btn:hover, #about-page #homepage .hero .hero-content .cta-btn:hover, #homepage .hero .hero-content #about-page .cta-btn:hover, #about-page #homepage .intro .cta-btn:hover, #homepage .intro #about-page .cta-btn:hover, #about-page #homepage .intro .link-btn:hover, #homepage .intro #about-page .link-btn:hover,
+#about-page #homepage .services-preview .cta-btn:hover,
+#homepage .services-preview #about-page .cta-btn:hover,
+#about-page #homepage .services-preview .link-btn:hover,
+#homepage .services-preview #about-page .link-btn:hover,
+#about-page #homepage .cta .cta-btn:hover,
+#homepage .cta #about-page .cta-btn:hover,
+#about-page #homepage .cta .link-btn:hover,
+#homepage .cta #about-page .link-btn:hover, #about-page #services-page .services-cta .cta-btn:hover, #services-page .services-cta #about-page .cta-btn:hover {
+  background: #162b3c;
+  color: #f5b971;
+}
 #about-page .about-hero {
-  background: linear-gradient(to right, #0077b6, #023e8a);
+  background: linear-gradient(to right, #1e3d59, #162b3c);
   color: #ffffff;
   padding: 60px 20px;
   border-radius: 12px;
@@ -12174,39 +12343,26 @@ textarea.form-control-lg {
   margin: 40px auto;
   text-align: left;
   line-height: 1.7;
-  color: #023e8a;
+  color: #162b3c;
 }
 #about-page .about-content p {
   margin-bottom: 20px;
 }
 #about-page .about-content strong {
-  color: #0077b6;
+  color: #1e3d59;
 }
 #about-page .about-cta {
   margin-top: 50px;
-  background: #90e0ef;
+  background: #e8f1f5;
   padding: 40px 20px;
   border-radius: 12px;
 }
 #about-page .about-cta h2, #about-page .about-cta .h2 {
   margin-bottom: 15px;
-  color: #023e8a;
+  color: #162b3c;
 }
-#about-page .about-cta .cta-btn {
-  display: inline-block;
-  padding: 12px 24px;
-  background: #0077b6;
-  color: #ffffff;
-  border-radius: 8px;
-  font-weight: bold;
-  transition: 0.3s;
-}
-#about-page .about-cta .cta-btn:hover {
-  background: #023e8a;
-}
-
 #footer {
-  background: #023e8a;
+  background: #162b3c;
   color: #ffffff;
   text-align: center;
   padding: 30px 20px;
@@ -12233,7 +12389,7 @@ textarea.form-control-lg {
   gap: 20px;
 }
 #footer .footer-content .footer-links li a {
-  color: #90e0ef;
+  color: #e8f1f5;
   font-weight: 600;
   transition: 0.3s;
 }
@@ -12242,42 +12398,50 @@ textarea.form-control-lg {
 }
 #footer .footer-content .copyright {
   font-size: 0.85rem;
-  color: #90e0ef;
+  color: #e8f1f5;
 }
 
 #contact-page {
   min-height: 100vh;
-  background: linear-gradient(90deg, #e0f2ff 60%, #ffb366 100%);
+  background: linear-gradient(90deg, #f9fbfc 60%);
   padding: 40px 0;
 }
 #contact-page .contact-hero {
-  background: linear-gradient(to right, #1976d2, #0d47a1);
-  color: #fff;
+  background: linear-gradient(135deg, #1e3d59, #162b3c);
+  color: #ffffff;
   padding: 50px 20px;
   border-radius: 12px;
   margin: 0 auto 40px;
   max-width: 900px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
 }
 #contact-page .contact-hero h1, #contact-page .contact-hero .h1 {
   font-size: 2.5rem;
   margin-bottom: 10px;
+  color: #f5b971;
+  text-shadow: 1px 1px 4px rgba(22, 43, 60, 0.5);
 }
 #contact-page .contact-hero p {
   max-width: 700px;
   margin: 0 auto;
   font-size: 1.2rem;
+  color: #ffffff;
+  text-shadow: 1px 1px 4px rgba(22, 43, 60, 0.5);
 }
 #contact-page .contact-content {
   max-width: 900px;
   margin: 0 auto 40px;
-  background: #fff;
+  background: #ffffff;
   border-radius: 12px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.06);
   padding: 30px;
+  text-align: left;
 }
 #contact-page .contact-content h2, #contact-page .contact-content .h2 {
-  color: #1976d2;
+  color: #1e3d59;
   margin-bottom: 20px;
+  text-align: left;
 }
 #contact-page .contact-content .contact-form {
   display: flex;
@@ -12296,83 +12460,115 @@ textarea.form-control-lg {
   display: flex;
   flex-direction: column;
 }
-#contact-page .contact-content .contact-form .form-group label {
-  color: #0d47a1;
-  font-weight: 600;
-  margin-bottom: 8px;
-}
 #contact-page .contact-content .contact-form .form-group input,
 #contact-page .contact-content .contact-form .form-group textarea {
-  padding: 12px;
-  border: 1px solid #bdbdbd;
-  border-radius: 8px;
+  background: #f9fbfc;
+  border: 2px solid rgba(30, 61, 89, 0.2);
+  color: #1e3d59;
+  padding: 1rem;
+  border-radius: 12px;
+  transition: all 0.3s;
+  font-family: "Inter", "Montserrat", sans-serif;
   font-size: 1rem;
-  font-family: inherit;
-  color: #0d47a1;
 }
 #contact-page .contact-content .contact-form .form-group input:focus,
 #contact-page .contact-content .contact-form .form-group textarea:focus {
+  border-color: #f5b971;
+  box-shadow: 0 0 0 4px rgba(245, 185, 113, 0.1);
   outline: none;
-  border-color: #1976d2;
-  box-shadow: 0 0 5px rgba(25, 118, 210, 0.3);
 }
-#contact-page .contact-content .contact-form .form-group textarea {
-  resize: vertical;
+#contact-page .contact-content .contact-form .form-group label {
+  color: #1e3d59;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  text-align: left;
 }
 #contact-page .contact-content .contact-form .form-actions {
   text-align: right;
+  margin-top: 1rem;
 }
-#contact-page .contact-content .contact-form .cta-btn {
+#contact-page .contact-content .contact-form .btn-main, #contact-page .contact-content .contact-form .cta-btn, #contact-page .contact-content .contact-form #homepage .intro .link-btn, #homepage .intro #contact-page .contact-content .contact-form .link-btn,
+#contact-page .contact-content .contact-form #homepage .services-preview .link-btn,
+#homepage .services-preview #contact-page .contact-content .contact-form .link-btn,
+#contact-page .contact-content .contact-form #homepage .cta .link-btn,
+#homepage .cta #contact-page .contact-content .contact-form .link-btn {
   display: inline-block;
   padding: 12px 24px;
-  background: #1976d2;
-  color: #fff;
-  border: none;
+  background: #1e3d59;
+  color: #ffffff;
   border-radius: 8px;
   font-weight: bold;
-  cursor: pointer;
   transition: 0.3s;
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+#contact-page .contact-content .contact-form .btn-main:hover, #contact-page .contact-content .contact-form .cta-btn:hover, #contact-page .contact-content .contact-form #homepage .intro .link-btn:hover, #homepage .intro #contact-page .contact-content .contact-form .link-btn:hover,
+#contact-page .contact-content .contact-form #homepage .services-preview .link-btn:hover,
+#homepage .services-preview #contact-page .contact-content .contact-form .link-btn:hover,
+#contact-page .contact-content .contact-form #homepage .cta .link-btn:hover,
+#homepage .cta #contact-page .contact-content .contact-form .link-btn:hover {
+  background: #162b3c;
+  color: #f5b971;
+}
+#contact-page .contact-content .contact-form .cta-btn {
+  background: linear-gradient(135deg, #1e3d59, #162b3c);
+  color: #ffffff;
+  border-radius: 50px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border: none;
+  transition: all 0.3s ease;
+  cursor: pointer;
 }
 #contact-page .contact-content .contact-form .cta-btn:hover {
-  background: #0d47a1;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background: #f5b971;
+  color: #1e3d59;
 }
 #contact-page .contact-table {
   max-width: 900px;
   margin: 0 auto 40px;
-  background: #fff;
+  background: #ffffff;
   border-radius: 12px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.06);
   padding: 30px;
+  text-align: left;
 }
 #contact-page .contact-table h2, #contact-page .contact-table .h2 {
-  color: #1976d2;
+  color: #1e3d59;
   margin-bottom: 20px;
-}
-#contact-page .contact-table .table-responsive {
-  overflow-x: auto;
+  text-align: left;
 }
 #contact-page .contact-table table {
   width: 100%;
-  border-collapse: collapse;
-  background: #fff;
+  border-collapse: separate;
+  border-spacing: 0;
+  background: #ffffff;
 }
 #contact-page .contact-table table th,
 #contact-page .contact-table table td {
-  padding: 10px;
+  padding: 12px 15px;
   text-align: left;
+  color: #1e3d59;
 }
 #contact-page .contact-table table th {
-  background: #e3f2fd;
-  color: #0d47a1;
+  background: rgba(30, 61, 89, 0.1);
+  color: #1e3d59;
   font-weight: 600;
+  border-bottom: 2px solid rgba(30, 61, 89, 0.2);
 }
 #contact-page .contact-table table tr {
-  border-bottom: 1px solid #eee;
+  transition: background-color 0.3s;
 }
-#contact-page .contact-table table .no-messages {
-  text-align: center;
-  color: #888;
-  padding: 20px;
+#contact-page .contact-table table tr:hover {
+  background-color: rgba(232, 241, 245, 0.2);
+}
+#contact-page .contact-table table td {
+  border-bottom: 1px solid rgba(108, 117, 125, 0.1);
 }
 #contact-page .contact-table table .message-cell {
   max-width: 200px;
@@ -12383,46 +12579,118 @@ textarea.form-control-lg {
   border: none;
   cursor: pointer;
   font-size: 1.2rem;
-  margin-right: 8px;
+  color: #1e3d59;
+  transition: color 0.3s;
+  padding: 5px;
+  border-radius: 4px;
 }
-#contact-page .contact-table table .icon-btn:last-child {
-  margin-right: 0;
+#contact-page .contact-table table .icon-btn:hover {
+  color: #f5b971;
+  background: rgba(245, 185, 113, 0.1);
 }
-#contact-page .contact-cta {
-  margin: 0 auto 40px;
-  max-width: 900px;
-  background: #e3f2fd;
-  padding: 40px 20px;
+#contact-page .contact-dropdown {
+  display: flex;
+  justify-content: center;
+  margin: 30px 0 20px 0;
+}
+#contact-page .contact-dropdown select {
+  font-size: 1.1rem;
+  padding: 10px 20px;
   border-radius: 12px;
+  border: 2px solid rgba(30, 61, 89, 0.2);
+  color: #1e3d59;
+  background: #ffffff;
+  font-weight: 600;
+  outline: none;
+  transition: all 0.3s;
+  cursor: pointer;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' fill='%231a5f7a' viewBox='0 0 16 16'%3E%3Cpath d='M7.247 11.14L2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: calc(100% - 12px) center;
+  padding-right: 35px;
 }
-#contact-page .contact-cta h2, #contact-page .contact-cta .h2 {
-  margin-bottom: 15px;
-  color: #0d47a1;
+#contact-page .contact-dropdown select:focus {
+  border-color: #f5b971;
+  box-shadow: 0 0 0 4px rgba(245, 185, 113, 0.1);
 }
-#contact-page .contact-cta .cta-btn {
-  display: inline-block;
-  padding: 12px 24px;
-  background: #1976d2;
-  color: #fff;
-  border-radius: 8px;
-  font-weight: bold;
-  transition: 0.3s;
-  text-decoration: none;
-  margin-top: 10px;
-}
-#contact-page .contact-cta .cta-btn:hover {
-  background: #0d47a1;
+#contact-page .contact-dropdown select:hover {
+  border-color: #f5b971;
 }
 
 body {
-  background: #f0f8ff;
-  font-family: "Nunito", sans-serif;
+  background: #f9fbfc;
+  font-family: "Inter", "Montserrat", sans-serif;
   margin: 0;
   padding: 0;
-  color: #023e8a;
+  color: #2d3436;
+  line-height: 1.6;
 }
 
 a {
   text-decoration: none;
   color: inherit;
+  transition: all 0.3s ease;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
+}
+.btn-primary {
+  background: linear-gradient(135deg, #1e3d59, #162b3c);
+  color: #ffffff;
+}
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.btn-outline {
+  border: 2px solid #1e3d59;
+  color: #1e3d59;
+  background: transparent;
+}
+.btn-outline:hover {
+  background: #1e3d59;
+  color: #ffffff;
+}
+
+.fade-in {
+  animation: fadeIn 0.5s ease-in;
+}
+
+.slide-up {
+  animation: slideUp 0.5s ease-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes slideUp {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }

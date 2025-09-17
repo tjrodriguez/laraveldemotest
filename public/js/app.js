@@ -23286,7 +23286,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "#contact-page {\n  min-height: 100vh;\n  background: linear-gradient(90deg, #e0f2ff 60%, #ffb366 100%);\n  padding: 40px 0;\n}\n#contact-page .contact-hero {\n  background: linear-gradient(to right, #1976d2, #0d47a1);\n  color: #fff;\n  padding: 50px 20px;\n  border-radius: 12px;\n  margin: 0 auto 40px;\n  max-width: 900px;\n}\n#contact-page .contact-hero h1 {\n  font-size: 2.5rem;\n  margin-bottom: 10px;\n}\n#contact-page .contact-hero p {\n  max-width: 700px;\n  margin: 0 auto;\n  font-size: 1.2rem;\n}\n#contact-page .contact-content {\n  max-width: 900px;\n  margin: 0 auto 40px;\n  background: #fff;\n  border-radius: 12px;\n  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);\n  padding: 30px;\n}\n#contact-page .contact-content h2 {\n  color: #1976d2;\n  margin-bottom: 20px;\n}\n#contact-page .contact-content .contact-form {\n  display: flex;\n  flex-direction: column;\n  gap: 20px;\n}\n#contact-page .contact-content .contact-form .form-row {\n  display: flex;\n  gap: 20px;\n  flex-wrap: wrap;\n}\n#contact-page .contact-content .contact-form .form-row .form-group {\n  flex: 1 1 200px;\n}\n#contact-page .contact-content .contact-form .form-group {\n  display: flex;\n  flex-direction: column;\n}\n#contact-page .contact-content .contact-form .form-group label {\n  color: #0d47a1;\n  font-weight: 600;\n  margin-bottom: 8px;\n}\n#contact-page .contact-content .contact-form .form-group input,\n#contact-page .contact-content .contact-form .form-group textarea {\n  padding: 12px;\n  border: 1px solid #bdbdbd;\n  border-radius: 8px;\n  font-size: 1rem;\n  font-family: inherit;\n  color: #0d47a1;\n}\n#contact-page .contact-content .contact-form .form-group input:focus,\n#contact-page .contact-content .contact-form .form-group textarea:focus {\n  outline: none;\n  border-color: #1976d2;\n  box-shadow: 0 0 5px rgba(25, 118, 210, 0.3);\n}\n#contact-page .contact-content .contact-form .form-group textarea {\n  resize: vertical;\n}\n#contact-page .contact-content .contact-form .form-actions {\n  text-align: right;\n}\n#contact-page .contact-content .contact-form .cta-btn {\n  display: inline-block;\n  padding: 12px 24px;\n  background: #1976d2;\n  color: #fff;\n  border: none;\n  border-radius: 8px;\n  font-weight: bold;\n  cursor: pointer;\n  transition: 0.3s;\n}\n#contact-page .contact-content .contact-form .cta-btn:hover {\n  background: #0d47a1;\n}\n#contact-page .contact-table {\n  max-width: 900px;\n  margin: 0 auto 40px;\n  background: #fff;\n  border-radius: 12px;\n  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);\n  padding: 30px;\n}\n#contact-page .contact-table h2 {\n  color: #1976d2;\n  margin-bottom: 20px;\n}\n#contact-page .contact-table .table-responsive {\n  overflow-x: auto;\n}\n#contact-page .contact-table table {\n  width: 100%;\n  border-collapse: collapse;\n  background: #fff;\n}\n#contact-page .contact-table table th,\n#contact-page .contact-table table td {\n  padding: 10px;\n  text-align: left;\n}\n#contact-page .contact-table table th {\n  background: #e3f2fd;\n  color: #0d47a1;\n  font-weight: 600;\n}\n#contact-page .contact-table table tr {\n  border-bottom: 1px solid #eee;\n}\n#contact-page .contact-table table .no-messages {\n  text-align: center;\n  color: #888;\n  padding: 20px;\n}\n#contact-page .contact-table table .message-cell {\n  max-width: 200px;\n  word-break: break-word;\n}\n#contact-page .contact-table table .icon-btn {\n  background: none;\n  border: none;\n  cursor: pointer;\n  font-size: 1.2rem;\n  margin-right: 8px;\n}\n#contact-page .contact-table table .icon-btn:last-child {\n  margin-right: 0;\n}\n#contact-page .contact-cta {\n  margin: 0 auto 40px;\n  max-width: 900px;\n  background: #e3f2fd;\n  padding: 40px 20px;\n  border-radius: 12px;\n}\n#contact-page .contact-cta h2 {\n  margin-bottom: 15px;\n  color: #0d47a1;\n}\n#contact-page .contact-cta .cta-btn {\n  display: inline-block;\n  padding: 12px 24px;\n  background: #1976d2;\n  color: #fff;\n  border-radius: 8px;\n  font-weight: bold;\n  transition: 0.3s;\n  text-decoration: none;\n  margin-top: 10px;\n}\n#contact-page .contact-cta .cta-btn:hover {\n  background: #0d47a1;\n}", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "#contact-page {\n  min-height: 100vh;\n  background: linear-gradient(90deg, #f9fbfc 60%);\n  padding: 40px 0;\n}\n#contact-page .contact-hero {\n  background: linear-gradient(135deg, #1e3d59, #162b3c);\n  color: #ffffff;\n  padding: 50px 20px;\n  border-radius: 12px;\n  margin: 0 auto 40px;\n  max-width: 900px;\n  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);\n  text-align: center;\n}\n#contact-page .contact-hero h1 {\n  font-size: 2.5rem;\n  margin-bottom: 10px;\n  color: #f5b971;\n  text-shadow: 1px 1px 4px rgba(22, 43, 60, 0.5);\n}\n#contact-page .contact-hero p {\n  max-width: 700px;\n  margin: 0 auto;\n  font-size: 1.2rem;\n  color: #ffffff;\n  text-shadow: 1px 1px 4px rgba(22, 43, 60, 0.5);\n}\n#contact-page .contact-content {\n  max-width: 900px;\n  margin: 0 auto 40px;\n  background: #ffffff;\n  border-radius: 12px;\n  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.06);\n  padding: 30px;\n  text-align: left;\n}\n#contact-page .contact-content h2 {\n  color: #1e3d59;\n  margin-bottom: 20px;\n  text-align: left;\n}\n#contact-page .contact-content .contact-form {\n  display: flex;\n  flex-direction: column;\n  gap: 20px;\n}\n#contact-page .contact-content .contact-form .form-row {\n  display: flex;\n  gap: 20px;\n  flex-wrap: wrap;\n}\n#contact-page .contact-content .contact-form .form-row .form-group {\n  flex: 1 1 200px;\n}\n#contact-page .contact-content .contact-form .form-group {\n  display: flex;\n  flex-direction: column;\n}\n#contact-page .contact-content .contact-form .form-group input,\n#contact-page .contact-content .contact-form .form-group textarea {\n  background: #f9fbfc;\n  border: 2px solid rgba(30, 61, 89, 0.2);\n  color: #1e3d59;\n  padding: 1rem;\n  border-radius: 12px;\n  transition: all 0.3s;\n  font-family: \"Inter\", \"Montserrat\", sans-serif;\n  font-size: 1rem;\n}\n#contact-page .contact-content .contact-form .form-group input:focus,\n#contact-page .contact-content .contact-form .form-group textarea:focus {\n  border-color: #f5b971;\n  box-shadow: 0 0 0 4px rgba(245, 185, 113, 0.1);\n  outline: none;\n}\n#contact-page .contact-content .contact-form .form-group label {\n  color: #1e3d59;\n  font-weight: 600;\n  margin-bottom: 0.5rem;\n  text-align: left;\n}\n#contact-page .contact-content .contact-form .form-actions {\n  text-align: right;\n  margin-top: 1rem;\n}\n#contact-page .contact-content .contact-form .btn-main, #contact-page .contact-content .contact-form .cta-btn {\n  display: inline-block;\n  padding: 12px 24px;\n  background: #1e3d59;\n  color: #ffffff;\n  border-radius: 8px;\n  font-weight: bold;\n  transition: 0.3s;\n  border: none;\n  cursor: pointer;\n  text-transform: uppercase;\n  letter-spacing: 1px;\n}\n#contact-page .contact-content .contact-form .btn-main:hover, #contact-page .contact-content .contact-form .cta-btn:hover {\n  background: #162b3c;\n  color: #f5b971;\n}\n#contact-page .contact-content .contact-form .cta-btn {\n  background: linear-gradient(135deg, #1e3d59, #162b3c);\n  color: #ffffff;\n  border-radius: 50px;\n  font-weight: 600;\n  text-transform: uppercase;\n  letter-spacing: 1px;\n  border: none;\n  transition: all 0.3s ease;\n  cursor: pointer;\n}\n#contact-page .contact-content .contact-form .cta-btn:hover {\n  transform: translateY(-2px);\n  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);\n  background: #f5b971;\n  color: #1e3d59;\n}\n#contact-page .contact-table {\n  max-width: 900px;\n  margin: 0 auto 40px;\n  background: #ffffff;\n  border-radius: 12px;\n  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.06);\n  padding: 30px;\n  text-align: left;\n}\n#contact-page .contact-table h2 {\n  color: #1e3d59;\n  margin-bottom: 20px;\n  text-align: left;\n}\n#contact-page .contact-table table {\n  width: 100%;\n  border-collapse: separate;\n  border-spacing: 0;\n  background: #ffffff;\n}\n#contact-page .contact-table table th,\n#contact-page .contact-table table td {\n  padding: 12px 15px;\n  text-align: left;\n  color: #1e3d59;\n}\n#contact-page .contact-table table th {\n  background: rgba(30, 61, 89, 0.1);\n  color: #1e3d59;\n  font-weight: 600;\n  border-bottom: 2px solid rgba(30, 61, 89, 0.2);\n}\n#contact-page .contact-table table tr {\n  transition: background-color 0.3s;\n}\n#contact-page .contact-table table tr:hover {\n  background-color: rgba(232, 241, 245, 0.2);\n}\n#contact-page .contact-table table td {\n  border-bottom: 1px solid rgba(108, 117, 125, 0.1);\n}\n#contact-page .contact-table table .message-cell {\n  max-width: 200px;\n  word-break: break-word;\n}\n#contact-page .contact-table table .icon-btn {\n  background: none;\n  border: none;\n  cursor: pointer;\n  font-size: 1.2rem;\n  color: #1e3d59;\n  transition: color 0.3s;\n  padding: 5px;\n  border-radius: 4px;\n}\n#contact-page .contact-table table .icon-btn:hover {\n  color: #f5b971;\n  background: rgba(245, 185, 113, 0.1);\n}\n#contact-page .contact-dropdown {\n  display: flex;\n  justify-content: center;\n  margin: 30px 0 20px 0;\n}\n#contact-page .contact-dropdown select {\n  font-size: 1.1rem;\n  padding: 10px 20px;\n  border-radius: 12px;\n  border: 2px solid rgba(30, 61, 89, 0.2);\n  color: #1e3d59;\n  background: #ffffff;\n  font-weight: 600;\n  outline: none;\n  transition: all 0.3s;\n  cursor: pointer;\n  -webkit-appearance: none;\n     -moz-appearance: none;\n          appearance: none;\n  background-image: url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' fill='%231a5f7a' viewBox='0 0 16 16'%3E%3Cpath d='M7.247 11.14L2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z'/%3E%3C/svg%3E\");\n  background-repeat: no-repeat;\n  background-position: calc(100% - 12px) center;\n  padding-right: 35px;\n}\n#contact-page .contact-dropdown select:focus {\n  border-color: #f5b971;\n  box-shadow: 0 0 0 4px rgba(245, 185, 113, 0.1);\n}\n#contact-page .contact-dropdown select:hover {\n  border-color: #f5b971;\n}", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -75381,6 +75381,7 @@ __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
  */
 
 __webpack_require__(/*! ./components/Routers */ "./resources/js/components/Routers.js");
+//app.js
 
 /***/ }),
 
@@ -75435,45 +75436,47 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (/* binding */ AboutUs)
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/dist/index.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+
 
 
 function AboutUs() {
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
     id: "about-page",
-    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("section", {
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("section", {
       className: "about-hero",
-      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("h1", {
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("h1", {
         children: "About Me"
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("p", {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("p", {
         className: "tagline",
         children: "\u2693 Passion for the Sea, Precision for Your Boat"
       })]
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("section", {
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("section", {
       className: "about-content",
-      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("p", {
-        children: ["Hi, I\u2019m ", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("strong", {
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("p", {
+        children: ["Hi, I\u2019m ", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("strong", {
           children: "Terrence Rodriguez"
-        }), ", a professional", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("em", {
+        }), ", a professional", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("em", {
           children: " Boat Technician"
         }), " dedicated to keeping vessels in top shape for safe and enjoyable journeys."]
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("p", {
-        children: ["With years of hands-on experience in ", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("strong", {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("p", {
+        children: ["With years of hands-on experience in ", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("strong", {
           children: "marine mechanics, electrical systems, and hull maintenance"
         }), ", I provide expert services to ensure your boat performs at its best."]
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("p", {
-        children: ["My mission is simple: ", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("em", {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("p", {
+        children: ["My mission is simple: ", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("em", {
           children: "help boat owners enjoy worry-free adventures on the water"
         }), ". Whether it\u2019s a minor repair or a complete overhaul, I bring dedication, precision, and trust to every job."]
       })]
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("section", {
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("section", {
       className: "about-cta",
-      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("h2", {
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("h2", {
         children: "Let\u2019s Get Your Vessel Sea-Ready"
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("p", {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("p", {
         children: "Reach out today and I\u2019ll make sure your next trip on the water is smooth and safe."
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("a", {
-        href: "#contact",
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_1__.Link, {
+        to: "/contact?view=form",
         className: "cta-btn",
         children: "Contact Me"
       })]
@@ -75496,7 +75499,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! axios */ "./node_modules/axios/lib/axios.js");
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/dist/index.js");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router/dist/index.js");
 /* harmony import */ var _sass_contactus_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../sass/contactus.scss */ "./resources/sass/contactus.scss");
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
 function _typeof(o) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, _typeof(o); }
@@ -75539,11 +75542,15 @@ function ContactUs() {
     _useState6 = _slicedToArray(_useState5, 2),
     editId = _useState6[0],
     setEditId = _useState6[1];
+  var location = (0,react_router_dom__WEBPACK_IMPORTED_MODULE_2__.useLocation)();
+  var navigate = (0,react_router_dom__WEBPACK_IMPORTED_MODULE_2__.useNavigate)();
 
-  // Fetch contacts from API
+  // Get view from URL query param
+  var params = new URLSearchParams(location.search);
+  var view = params.get("view") || "form";
   (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(function () {
-    fetchContacts();
-  }, []);
+    if (view === "messages") fetchContacts();
+  }, [view]);
   var fetchContacts = /*#__PURE__*/function () {
     var _ref = _asyncToGenerator(/*#__PURE__*/_regenerator().m(function _callee() {
       var res;
@@ -75595,7 +75602,7 @@ function ContactUs() {
               message: ""
             });
             setEditId(null);
-            fetchContacts();
+            if (view === "messages") fetchContacts();
             _context2.n = 6;
             break;
           case 5:
@@ -75623,6 +75630,8 @@ function ContactUs() {
       message: contact.message
     });
     setEditId(id);
+    // Switch to form view
+    navigate("/contact?view=form");
   };
   var handleDelete = /*#__PURE__*/function () {
     var _ref3 = _asyncToGenerator(/*#__PURE__*/_regenerator().m(function _callee3(id) {
@@ -75652,7 +75661,7 @@ function ContactUs() {
       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("p", {
         children: "Got a question or need professional boat maintenance? Reach out, and let\u2019s ensure your vessel is ready for the sea!"
       })]
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("section", {
+    }), view === "form" && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("section", {
       className: "contact-content",
       children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("h2", {
         children: editId ? "Edit Message" : "Send Me a Message"
@@ -75727,7 +75736,7 @@ function ContactUs() {
           })
         })]
       })]
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("section", {
+    }), view === "messages" && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("section", {
       className: "contact-table",
       children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("h2", {
         children: "Contact Messages"
@@ -75800,17 +75809,6 @@ function ContactUs() {
           })]
         })
       })]
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("section", {
-      className: "contact-cta",
-      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("h2", {
-        children: "Ready for Your Next Adventure?"
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("p", {
-        children: "Let\u2019s get your boat in top shape. Contact me today for expert service!"
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_2__.Link, {
-        to: "/services",
-        className: "cta-btn",
-        children: "Explore My Services"
-      })]
     })]
   });
 }
@@ -75829,44 +75827,20 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (/* binding */ Footer)
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/dist/index.js");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
 
 
 
 function Footer() {
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("footer", {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("footer", {
     id: "footer",
-    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
       className: "footer-content",
-      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("h3", {
-        children: "\u2693 Terrence Rodriguez"
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("p", {
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("h3", {
+        children: "Terrence Rodriguez"
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("p", {
         children: "Professional Boat Technician"
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("ul", {
-        className: "footer-links",
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("li", {
-          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_1__.Link, {
-            to: "/home",
-            children: "Home"
-          })
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("li", {
-          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_1__.Link, {
-            to: "/services",
-            children: "Services"
-          })
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("li", {
-          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_1__.Link, {
-            to: "/about",
-            children: "About"
-          })
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("li", {
-          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_1__.Link, {
-            to: "/contact",
-            children: "Contact"
-          })
-        })]
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("p", {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("p", {
         className: "copyright",
         children: ["\xA9 ", new Date().getFullYear(), " Terrence Rodriguez. All Rights Reserved."]
       })]
@@ -75901,7 +75875,7 @@ function Home() {
       children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
         className: "hero-content",
         children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("h1", {
-          children: "\u2693 WOW!Boat Mechanic"
+          children: "Terrence Rodriguez"
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("h2", {
           children: "Your Trusted Boat Technician"
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("p", {
@@ -75962,8 +75936,8 @@ function Home() {
         children: "Let\u2019s Get Your Boat Sea-Ready"
       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("p", {
         children: "Contact me today and let\u2019s ensure your vessel is always prepared for the next adventure."
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("a", {
-        href: "#contact",
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_1__.Link, {
+        to: "/contact?view=form",
         className: "cta-btn",
         children: "Get in Touch"
       })]
@@ -75985,8 +75959,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (/* binding */ Nav)
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/dist/index.js");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router/dist/index.js");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/dist/index.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
 function _slicedToArray(r, e) { return _arrayWithHoles(r) || _iterableToArrayLimit(r, e) || _unsupportedIterableToArray(r, e) || _nonIterableRest(); }
 function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
 function _unsupportedIterableToArray(r, a) { if (r) { if ("string" == typeof r) return _arrayLikeToArray(r, a); var t = {}.toString.call(r).slice(8, -1); return "Object" === t && r.constructor && (t = r.constructor.name), "Map" === t || "Set" === t ? Array.from(r) : "Arguments" === t || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(t) ? _arrayLikeToArray(r, a) : void 0; } }
@@ -76001,46 +75976,60 @@ function Nav() {
     _useState2 = _slicedToArray(_useState, 2),
     isOpen = _useState2[0],
     setIsOpen = _useState2[1];
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("nav", {
+  var location = (0,react_router_dom__WEBPACK_IMPORTED_MODULE_1__.useLocation)();
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("nav", {
     id: "navbar",
-    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("h2", {
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("h2", {
       className: "logo",
-      children: "\u2693 WOW! Boat Mechanic 4 hire \u2693"
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("button", {
+      children: "\u2693 On Call Boat Mechanic \u2693"
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("button", {
       className: "menu-toggle",
       onClick: function onClick() {
         return setIsOpen(!isOpen);
       },
       "aria-label": "Toggle Menu",
       children: "\u2630"
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("ul", {
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("ul", {
       className: isOpen ? "nav-links open" : "nav-links",
-      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("li", {
-        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_1__.Link, {
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("li", {
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_2__.Link, {
           to: "/home",
           onClick: function onClick() {
             return setIsOpen(false);
           },
           children: "Home"
         })
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("li", {
-        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_1__.Link, {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("li", {
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_2__.Link, {
           to: "/services",
           onClick: function onClick() {
             return setIsOpen(false);
           },
           children: "Services"
         })
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("li", {
-        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_1__.Link, {
-          to: "/contact",
-          onClick: function onClick() {
-            return setIsOpen(false);
-          },
-          children: "Contact Us"
-        })
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("li", {
-        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_1__.Link, {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("li", {
+        className: "nav-contact-parent",
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("span", {
+          className: "nav-link",
+          children: "Contact Us \u25BE"
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {
+          className: "nav-dropdown",
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_2__.Link, {
+            to: "/contact?view=form",
+            onClick: function onClick() {
+              return setIsOpen(false);
+            },
+            children: "Contact Form"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_2__.Link, {
+            to: "/contact?view=messages",
+            onClick: function onClick() {
+              return setIsOpen(false);
+            },
+            children: "Contact Messages"
+          })]
+        })]
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("li", {
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_2__.Link, {
           to: "/about",
           onClick: function onClick() {
             return setIsOpen(false);
@@ -76132,58 +76121,60 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (/* binding */ Services)
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/dist/index.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+
 
 
 function Services() {
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
     id: "services-page",
-    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("section", {
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("section", {
       className: "services-hero",
-      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("h1", {
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("h1", {
         children: "My Services"
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("p", {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("p", {
         children: "As a dedicated boat technician, I provide expert solutions to keep your vessel safe, reliable, and ready for any journey."
       })]
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("section", {
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("section", {
       className: "services-grid",
-      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
         className: "service-card",
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("h2", {
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("h2", {
           children: "\u2699\uFE0F Engine Repair & Maintenance"
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("p", {
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("p", {
           children: "Complete diagnostics, tune-ups, and engine overhauls to ensure smooth sailing."
         })]
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
         className: "service-card",
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("h2", {
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("h2", {
           children: "\uD83D\uDD0C Electrical Systems"
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("p", {
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("p", {
           children: "Troubleshooting and repairing navigation, lighting, and battery systems."
         })]
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
         className: "service-card",
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("h2", {
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("h2", {
           children: "\uD83D\uDEE1\uFE0F Safety Inspections"
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("p", {
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("p", {
           children: "Comprehensive safety checks to keep your boat compliant and secure at sea."
         })]
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
         className: "service-card",
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("h2", {
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("h2", {
           children: "\uD83D\uDEE5\uFE0F Hull & Propeller Care"
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("p", {
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("p", {
           children: "Regular cleaning, maintenance, and repair of hulls and propellers for efficiency."
         })]
       })]
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("section", {
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("section", {
       className: "services-cta",
-      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("h2", {
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("h2", {
         children: "Need Professional Boat Assistance?"
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("p", {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("p", {
         children: "Contact me today and let\u2019s keep your boat running strong."
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("a", {
-        href: "#contact",
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_1__.Link, {
+        to: "/contact?view=form",
         className: "cta-btn",
         children: "Get in Touch"
       })]

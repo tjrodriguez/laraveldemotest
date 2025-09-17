@@ -1,14 +1,22 @@
-// Body Background
-$body-bg: #f0f8ff; // light ocean blue-white
+// Professional Maritime Color Palette
+$primary-blue: #1e3d59;    // Deep navy
+$dark-blue: #162b3c;       // Darker navy
+$light-blue: #e8f1f5;      // Soft maritime blue
+$accent-gold: #f5b971;     // Warm gold
+$accent-teal: #17b890;     // Sea teal
+$white: #ffffff;
+$off-white: #f9fbfc;
+$gray: #6c757d;
+$text-dark: #2d3436;
 
 // Typography
-$font-family-sans-serif: 'Nunito', sans-serif;
+$font-family-sans-serif: 'Inter', 'Montserrat', sans-serif;
 $font-size-base: 1rem;
 $line-height-base: 1.6;
 
-// Colors (Nautical Palette)
-$primary-blue: #0077b6;   // Deep sea blue
-$dark-blue: #023e8a;      // Navy
-$light-blue: #90e0ef;     // Sky reflection
-$white: #ffffff;          // Foam white
-$gray: #6c757d;           // Neutral text gray
+// Shadows & Effects
+$box-shadow-sm: 0 2px 4px rgba(0,0,0,0.06);
+$box-shadow-md: 0 4px 6px rgba(0,0,0,0.1);
+$box-shadow-lg: 0 10px 15px rgba(0,0,0,0.1);
+$gradient-primary: linear-gradient(135deg, $primary-blue, $dark-blue);
+$gradient-accent: linear-gradient(135deg, $accent-teal, $primary-blue);

@@ -1,5 +1,5 @@
 // Fonts
-@import url('https://fonts.googleapis.com/css?family=Nunito:400,600,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 
 // Variables
 @import 'variables';
@@ -14,16 +14,82 @@
 @import './about.scss';
 @import './footer.scss';
 @import './contactus.scss';
-// Global Reset
+
+// Global Styles
 body {
-    background: $body-bg;
+    background: $off-white;
     font-family: $font-family-sans-serif;
     margin: 0;
     padding: 0;
-    color: $dark-blue;
+    color: $text-dark;
+    line-height: $line-height-base;
 }
 
 a {
     text-decoration: none;
     color: inherit;
+    transition: all 0.3s ease;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+// Common Components
+.btn {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
+
+    &-primary {
+        background: $gradient-primary;
+        color: $white;
+        
+        &:hover {
+            transform: translateY(-2px);
+            box-shadow: $box-shadow-md;
+        }
+    }
+
+    &-outline {
+        border: 2px solid $primary-blue;
+        color: $primary-blue;
+        background: transparent;
+        
+        &:hover {
+            background: $primary-blue;
+            color: $white;
+        }
+    }
+}
+
+// Animation Classes
+.fade-in {
+    animation: fadeIn 0.5s ease-in;
+}
+
+.slide-up {
+    animation: slideUp 0.5s ease-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideUp {
+    from { 
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to { 
+        transform: translateY(0);
+        opacity: 1;
+    }
 }

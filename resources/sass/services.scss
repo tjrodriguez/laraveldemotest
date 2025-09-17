@@ -28,6 +28,25 @@
         }
     }
 
+    .btn-main {
+        display: inline-block;
+        padding: 12px 24px;
+        background: $primary-blue;
+        color: $white;
+        border-radius: 8px;
+        font-weight: bold;
+        transition: 0.3s;
+        border: none;
+        cursor: pointer;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+
+        &:hover {
+            background: $dark-blue;
+            color: $accent-gold;
+        }
+    }
+
     .services-cta {
         margin-top: 50px;
         padding: 40px;
@@ -35,15 +54,7 @@
         border-radius: 12px;
 
         .cta-btn {
-            padding: 12px 24px;
-            background: $primary-blue;
-            color: $white;
-            border-radius: 8px;
-            transition: 0.3s;
-
-            &:hover {
-                background: $dark-blue;
-            }
+            @extend .btn-main;
         }
     }
 }

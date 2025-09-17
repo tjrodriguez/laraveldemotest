@@ -12,4 +12,4 @@
     <script src="{{ mix('js/app.js') }}"></script>
 </body>
 </html>
-{{-- This is a Blade comment and will not be rendered in the final HTML output. --}}
+

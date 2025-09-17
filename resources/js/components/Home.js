@@ -7,7 +7,7 @@ export default function Home() {
             {/* Hero Section */}
             <section className="hero">
                 <div className="hero-content">
-                    <h1>⚓ WOW!Boat Mechanic</h1>
+                    <h1>Terrence Rodriguez</h1>
                     <h2>Your Trusted Boat Technician</h2>
                     <p>
                         From engine repair to complete vessel maintenance, I provide 
@@ -57,7 +57,7 @@ export default function Home() {
                     Contact me today and let’s ensure your vessel is always prepared 
                     for the next adventure.
                 </p>
-                <a href="#contact" className="cta-btn">Get in Touch</a>
+                <Link to="/contact?view=form" className="cta-btn">Get in Touch</Link>
             </section>
         </div>
     );

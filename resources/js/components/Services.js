@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export default function Services() {
     return (
@@ -43,7 +44,7 @@ export default function Services() {
             <section className="services-cta">
                 <h2>Need Professional Boat Assistance?</h2>
                 <p>Contact me today and let’s keep your boat running strong.</p>
-                <a href="#contact" className="cta-btn">Get in Touch</a>
+                <Link to="/contact?view=form" className="cta-btn">Get in Touch</Link>
             </section>
         </div>
     );

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export default function AboutUs() {
     return (
@@ -35,7 +36,7 @@ export default function AboutUs() {
                     Reach out today and I’ll make sure your next trip on the 
                     water is smooth and safe.
                 </p>
-                <a href="#contact" className="cta-btn">Contact Me</a>
+                <Link to="/contact?view=form" className="cta-btn">Contact Me</Link>
             </section>
         </div>
     );
